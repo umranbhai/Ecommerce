@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { FaCheck } from 'react-icons/fa'
 const AddToCard = ({ product }) => {
-    const { id, colors, stock } = product
+    const { id, colors } = product
     const [color, setColor] = useState(colors[0])
     return (
         <div>
@@ -14,6 +14,7 @@ const AddToCard = ({ product }) => {
                         >
                             {color === curColor && <FaCheck className='text-white text-xs' />}
                         </button>
+
                     )
                 })}
             </p>
