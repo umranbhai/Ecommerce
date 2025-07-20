@@ -67,18 +67,6 @@ const SingleProduct = () => {
           </div>
           <hr />
           {stock > 0 && <AddToCard product={oneProduct} />}
-          <div className="stock-count-container p-4">
-            <div className="stock-count flex items-center gap-2">
-              <button className="px-2 border border-gray-200 bg-gray-200 " onClick={() => count > 1 ? setCount(count - 1) : setCount(1)}>-</button>
-              <button className="w-10 text-center">{count}</button>
-              <button className="px-2 border border-gray-200 bg-gray-200" onClick={() => count < stock ? setCount(count + 1) : setCount(stock)}>+</button>
-            </div>
-
-          </div>
-          <div className="product-button flex flex-wrap gap-2  border-b-2 border-gray-200 p-4">
-            <button className="bg-red-500 text-white p-3 rounded">Buy Now</button>
-            <button className="bg-green-500 text-white p-3 rounded">Add to Cart</button>
-          </div>
         </div>
       </div>
     </div>

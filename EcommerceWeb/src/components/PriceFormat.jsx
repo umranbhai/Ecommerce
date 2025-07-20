@@ -3,6 +3,6 @@ function PriceFormat({ price }) {
         style: 'currency',
         currency: 'INR',
         maximumFractionDigits: 2,
-    }).format(price / 1000)
+    }).format(price / 100)
 }
 export default PriceFormat;

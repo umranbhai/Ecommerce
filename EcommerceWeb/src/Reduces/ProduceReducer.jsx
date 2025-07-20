@@ -19,6 +19,11 @@ const ProduceReducer = (state, action) => {
                 ...state, loading: false,
                 oneProduct: action.payload,
             };
+        case "API_DATA":
+            return {
+                ...state, loading: false,
+                products: action.payload,
+            };
 
         default:
             return state;
